@@ -140,8 +140,9 @@ header .container {
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  display: inline-flex;
+  display: flex;
   margin-left: auto;
+  align-items: center;
 }
 
 .contacts-list .item:not(:last-child) {
@@ -194,10 +195,27 @@ header .container {
       rgba(47, 48, 58, 0.4)
     ),
     url("../img/hero/bgi-hero.jpg");
-  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
+/* width: 1600px;
+    height: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    text-align: center;
+
+    background-position: center;
+    background-color: var(--hero-bg-color);
+    background-image: linear-gradient(
+     to right, 
+     rgba(47, 48, 58, 0.4),
+     rgba(47, 48, 58, 0.4)),
+     url('../images/hero-bg-image/Img-1.jpg'); 
+
+    border: 1px solid #000000; */
 
 .hero .container {
   width: 696px;
@@ -632,9 +650,10 @@ button {
 
 .portfolio .item:hover,
 .portfolio .item:focus {
-   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-  } 
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
 .portfolio .link:visited {
   color: var(--general-color-text);
 }
